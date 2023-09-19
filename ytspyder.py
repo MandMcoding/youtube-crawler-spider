@@ -49,5 +49,3 @@ try:
     print(name_li)
 finally:
     driver.quit()
-#basically an exponetial growth model, we open all the feat chans of the first chan, then all for the 2nd gen, etc
-#im not sure how ill visualise it but ill search graph theory python data science visualiser
