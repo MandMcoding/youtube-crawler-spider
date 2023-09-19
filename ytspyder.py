@@ -4,13 +4,8 @@ Created on Sun Sep 17 23:38:27 2023
 
 @author: m&m
 """
-
-#selenium learning (for youtube spider and chatgptree)
 from selenium import webdriver
-#from selenium.webdriver.common.keys import keys
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 import time
 
@@ -33,10 +28,9 @@ def click_arrows():
     except:
         ""
 
-# Configure Chrome options for headless mode
 chrome_options = Options()
-chrome_options.add_argument('--headless')  # Enable headless mode
-chrome_options.add_argument('--disable-gpu')  # Disable GPU to avoid some issues
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--disable-gpu')
 
 driver = webdriver.Chrome(chrome_options)
 driver.get('https://www.youtube.com/@AdamRyman/channels')
@@ -55,22 +49,5 @@ try:
     print(name_li)
 finally:
     driver.quit()
-
-#here is where the recursion would go
-	#either click or get the link and open the url for the first featured channel
-	#featured_channels1.1.1 loop etc
-#def open_channels():
-#	open_channels()
-
-
-#to save the channels, ill save the channel name and how many times they were reffered to, so either a dictionary or a list with each element as a touple/list[2]
-#channels = {"Name"=num,...} or [("Name", num),...] or [["Name", num],...]
-#wait till i can find the featured channels
-#featured_channels1 = [...] #I could have a data structure that holds the hole chart/graph, idk how but im thinking a list where each element (channel) becomes a list containing the channels in it.
-
-
-
-#I think i can use recursion to go through all the channels
-#I am going to go channel by channel, instead of 1st channel till end (maybe no end, maybe loop)
 #basically an exponetial growth model, we open all the feat chans of the first chan, then all for the 2nd gen, etc
 #im not sure how ill visualise it but ill search graph theory python data science visualiser
