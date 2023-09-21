@@ -33,7 +33,7 @@ python YOUR_PATH/ytspyder.py
 ## Version and Enviroment Details
 This is the first python project where I used a conda virtual enviroment. 
 
-python 3.11 | Selenium 4.12 | Chrome 117 | Chromedriver 117
+windows 11 | python 3.11.5 | Selenium 4.12 | Chrome 117.0.5938.89 x64 | Chromedriver 117.0.5938.88 stable win64
 
 ---
 * **m&m** - *Initial work* - [m&m](https://github.com/MandMcoding)
