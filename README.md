@@ -40,4 +40,4 @@ windows 11 | python 3.11.5 | Selenium 4.12 | Chrome 117.0.5938.89 x64 | Chromedr
 
 ## License
 
-This project is licensed under the GPL-3 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GPL-3 License - see the [LICENSE](LICENSE) file for details
